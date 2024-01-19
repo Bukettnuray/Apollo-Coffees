@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Apollo Coffee Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--Font links-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <!--Font links-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!--icons links-->
+
+  </head>
+  
+<body>
+    <div class="container">
+        <h1>Customer Account Form</h1>
+
+        <!-- Customer Account Form -->
+        <form action="/create-account" method="post" onsubmit="return showThankYou()">
+            <div class="mb-3">
+                <label for="fullName" class="form-label">Full Name:</label>
+                <input type="text" class="form-control" id="fullName" name="fullName" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="password" class="form-label">Password:</label>
+                <input type="password" class="form-control" id="password" name="password" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="confirmPassword" class="form-label">Confirm Password:</label>
+                <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Create Account</button>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <script>
+        function showThankYou() {
+            // Bu fonksiyon, formun submit edilmesi durumunda çalışacak
+            alert("Thank you! Your account has been created.");
+            return true; // Formun submit işlemine devam et
+        }
+    </script>
+</body>
+</html>
